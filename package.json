@@ -1,0 +1,44 @@
+{
+  "name": "pre-sns",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chldppwls12/pre-sns.git"
+  },
+  "author": "chldppwls12",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chldppwls12/pre-sns/issues"
+  },
+  "homepage": "https://github.com/chldppwls12/pre-sns#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.3.7",
+    "winston": "^3.8.1",
+    "winston-daily-rotate-file": "^4.7.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.30.7",
+    "@typescript-eslint/parser": "^5.30.7",
+    "eslint": "^8.20.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.19",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.0.0",
+    "typescript": "^4.7.4"
+  }
+}
