@@ -1,5 +1,5 @@
 import express from "express";
-import AppDataSource from "./loader/data-source";
+import AppDataSource from "@config/data-source";
 import logger from "@config/logger";
 require("dotenv").config();
 
