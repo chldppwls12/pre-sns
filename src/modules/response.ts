@@ -3,7 +3,7 @@ const success = (status: number, message: string, data?: any) => {
     status,
     isSuccess: true,
     message,
-    data
+    data,
   };
 };
 
@@ -11,11 +11,8 @@ const fail = (status: number, message: string) => {
   return {
     status,
     isSuccess: false,
-    message
+    message,
   };
 };
 
-export default {
-  success,
-  fail
-};
+export { success, fail };

@@ -18,8 +18,14 @@ export class User {
   @Column({ type: "varchar", length: 100, unique: true })
   email: string;
 
-  @Column({ type: "varchar", length: 500 })
+  @Column({ type: "tinytext" })
   password: string;
+
+  @Column({ type: "tinytext" })
+  salt: string;
+
+  @Column({ type: "tinytext" })
+  iv: string;
 
   @CreateDateColumn({ type: "timestamp" })
   createdAt: Date;

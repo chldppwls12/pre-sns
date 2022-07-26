@@ -1,7 +1,8 @@
 import express from "express";
 import AppDataSource from "@config/data-source";
 import logger from "@config/logger";
-require("dotenv").config();
+import routes from "./routes";
+import "dotenv/config";
 
 const app = express();
 
@@ -10,6 +11,7 @@ AppDataSource.initialize()
     app.use(express.urlencoded({ extended: true }));
     app.use(express.json());
 
+    app.use("/v1", routes);
     app
       .listen(process.env.PORT, () => {
         logger.info(`${process.env.NODE_ENV} - API Server Start At Port ${process.env.PORT}`);
