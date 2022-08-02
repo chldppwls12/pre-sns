@@ -5,6 +5,9 @@ const message = {
   BAD_REQUEST: "잘못된 요청",
   INTERNAL_SERVER_ERROR: "서버 내부 오류",
 
+  INVALID_TOKEN: "유효하지 않은 토큰",
+  EXPIRED_TOKEN: "만료된 토큰",
+
   DUPLICATE_EMAIL: "이미 존재하는 이메일",
 };
 
