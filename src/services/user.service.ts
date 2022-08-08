@@ -1,14 +1,14 @@
 import { success } from "src/modules/response";
 import message from "@modules/message";
 import statusCode from "@modules/statusCode";
-import { CreateUserDto } from "@interface/user/createUser.dto";
+import { CreateUserDTO } from "@interface/user.dto";
 import { User } from "@entity/User";
 import AppDataSource from "@config/data-source";
 import logger from "@config/logger";
 import setError from "@modules/setError";
 import passwordEncrypt from "@modules/password";
 
-const createUser = async (createUserDto: CreateUserDto) => {
+const createUser = async (createUserDto: CreateUserDTO) => {
   const { email, password } = createUserDto;
   try {
     const userRepo = AppDataSource.getRepository(User);
